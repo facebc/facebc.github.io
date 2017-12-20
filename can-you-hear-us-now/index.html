@@ -165,6 +165,16 @@
   class="img-responsive can-you-hear-us"
   alt="Can you hear us now?"/>
 
+<blockquote class="alert alert-info" role="alert">
+Thank you for caring about public education. Our email tool is currently
+disabled; due to the July 2017 change in government, its wording was outdated.
+We will update and re-start the email tool should it become necessary.
+<footer>
+    <cite>
+        <a target="_blank" href="https://facebc.wordpress.com/">FACE</a>
+    </cite>
+</footer>
+</blockquote>
 
 <p class="leadp1">
 After public pressure, the government has made several recent education funding
@@ -295,6 +305,7 @@ I urge you to launch an open-minded and impartial review, with the goal of ensur
 	}
 })(window, document);
 
+var toolDisabled = true;
 var faceSubject = 'Public education needs stable, predictable, adequate funding';
 var faceEmail = 'facebc.vancouver@gmail.com';
 
@@ -442,7 +453,7 @@ var mlas = [
 	var nameInput = document.getElementById('name');
 	var enableButton = function () {
 		var disabled = nameInput.value.trim().length === 0 || mla.value.trim().length === 0;
-		if (disabled) {
+		if (disabled || toolDisabled) {
 			button.setAttribute('disabled', disabled);
 			button.removeAttribute('href');
 		} else {
@@ -472,7 +483,10 @@ var mlas = [
 		document.getElementById('email').style.display = 'none';
 	});
 
-	button.addEventListener("click", function (e) {
+	button.addEventListener("click", function (e)
+        if (toolDisabled) {
+            return;
+        }
 		try {
 			if (button.getAttribute('disabled') === 'true') {
 				e.preventDefault();
