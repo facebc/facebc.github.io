@@ -1,0 +1,88 @@
+body {
+  font-size: 12pt;
+  background-color: #74c1bc;
+}
+
+form {
+  padding: 20px;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-left: 1px solid #67b5ae;
+  border-right: 4px solid #67b5ae;
+  background-color: #fff;
+}
+
+#main {
+    border-top: 4px solid #74c1bc
+}
+
+#footer {
+    border-bottom: 4px solid #67b5ae;
+}
+
+.banner-image {
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 0 0 20px 0;
+}
+
+.face-logo {
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 20px 0 20px 0;
+}
+
+.quote {
+  color: red;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+.leadp1 {
+font-weight: bold;
+}
+
+.leadp2 {
+font-weight: bold;
+font-size: 1.1em;
+}
+
+.email-content {
+  font-size: 1.1em;
+  font-style: italic;
+  color:grey;
+  border-radius: 0.5em;
+  padding: 1em;
+  border: solid 1px grey;
+  margin-bottom: 0.5em;
+}
+.social-buttons {
+  text-align: right;
+  padding: 0 20px 20px 20px;
+}
+.twitter {
+  background-color: #55acee;
+  border-color: #55acee;
+  color: #fff;
+}
+.btn-social:focus {
+  color: #eee;
+}
+.btn-social:hover {
+  color: #eee;
+}
+.facebook {
+  background-color: #3b5998;
+  border-color: #3b5998;
+  color: #fff;
+}
+
+
+li {
+  padding-bottom: 0.4em;
+}
