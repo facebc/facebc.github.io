@@ -123,8 +123,8 @@ var faceEmail = 'facebc.vancouver@gmail.com';
 
 var premierEmail = 'premier@gov.bc.ca';
 var moeEmail = 'educ.minister@gov.bc.ca';
-var mofEmail = ''
-var moeName = 'Premier Horgan and Minister Fleming';
+var mofEmail = 'fin.minister@gov.bc.ca'
+var moeName = 'Premier Horgan, Minister Fleming, and Minister James';
 var oppCritics = [
   'mary.polak.MLA@leg.bc.ca',
   'dan.davies.MLA@leg.bc.ca',
@@ -140,8 +140,8 @@ if (!String.prototype.trim) {
 
 var tweet = [
   "Let's prioritize public education in 2018",
-  "http://facebc.ca/newyear",
-  "#BCEd2018",
+  "http://facebc.ca/newyear/",
+  "#BCEd2018 #bced #bcpoli",
   "@rob_fleming, @jjhorgan, @ajwvictoriaBC, @FACE_BC"
 ].join('\n');
 
