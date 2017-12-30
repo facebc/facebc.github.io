@@ -118,8 +118,9 @@ var mlas = [
   ['Jordan Sturdy', 'jordan.sturdy.MLA@leg.bc.ca', 'West Vancouver-Sea to Sky']
 ];
 
-var faceSubject = 'Public education needs stable, predictable, adequate funding';
+var faceSubject = 'Prioritize public education in 2018';
 var faceEmail = 'facebc.vancouver@gmail.com';
+var panEmail = 'parentadvocacynetwork@gmail.com';
 
 var premierEmail = 'premier@gov.bc.ca';
 var moeEmail = 'educ.minister@gov.bc.ca';
@@ -129,7 +130,8 @@ var oppCritics = [
   'mary.polak.MLA@leg.bc.ca',
   'dan.davies.MLA@leg.bc.ca',
   'rich.coleman.MLA@leg.bc.ca',
-  'andrew.weaver.mla@leg.bc.ca'
+  'andrew.weaver.mla@leg.bc.ca',
+	'Sonia.Furstenau.MLA@leg.bc.ca'
 ];
 
 if (!String.prototype.trim) {
@@ -139,18 +141,16 @@ if (!String.prototype.trim) {
 }
 
 var tweet = [
-  "Let's prioritize public education in 2018",
-  "http://facebc.ca/newyear/",
+	"It's 2018. Time to prioritize public education. Take action: http://facebc.ca/newyear/",
   "#BCEd2018 #bced #bcpoli",
-  "@rob_fleming, @jjhorgan, @ajwvictoriaBC, @FACE_BC"
+  "@rob_fleming, @jjhorgan, @ajwvictoriaBC, @PAN_Vancouver, @FACE_BC"
 ].join('\n');
 
 document.getElementById('twitter')
 .setAttribute('href', 'https://twitter.com/home?status='+ encodeURIComponent(tweet));
 
 var faceBody = document.getElementById('body1').innerHTML.trim()
-+ '\n\n' + document.getElementById('body2').innerHTML.trim()
-+ '\n\n' + document.getElementById('body3').innerHTML.trim();
++ '\n\n' + document.getElementById('body2').innerHTML.trim();
 
 	var mlaByEmail = {};
 	mlas.sort(function(info1, info2) {
@@ -243,7 +243,7 @@ var faceBody = document.getElementById('body1').innerHTML.trim()
 				body += '\n\n' + userBody;
 			}
 
-			body += '\n\nSincerely';
+			body += '\n\nSincerely,';
 			body += '\n\n' + name;
 
 			body += '\n\n' + community;
@@ -261,7 +261,7 @@ var faceBody = document.getElementById('body1').innerHTML.trim()
         to.push(mofEmail);
       }
 
-      var cc = oppCritics.concat([faceEmail]);
+      var cc = oppCritics.concat([panEmail, faceEmail]);
 
       if (mlaEmail != 'Vacant') {
           cc.unshift(mlaEmail);
