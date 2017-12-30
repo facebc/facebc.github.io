@@ -1,6 +1,6 @@
 body {
   font-size: 12pt;
-  background-color: #74c1bc;
+  background-color: rgb(24,152, 200);
 }
 
 form {
@@ -11,8 +11,6 @@ section {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  border-left: 1px solid #67b5ae;
-  border-right: 4px solid #67b5ae;
   background-color: #fff;
 }
 
@@ -21,18 +19,17 @@ section {
 }
 
 #footer {
-    border-bottom: 4px solid #67b5ae;
+    /* border-bottom: 4px solid #67b5ae; */
 }
 
 .banner-image {
-  margin: 0 auto;
-  max-width: 300px;
-  padding: 0 0 20px 0;
+  margin: -20px -20px 10px -20px;
 }
 
 .face-logo {
   margin: 0 auto;
-  max-width: 300px;
+  width: 100%;
+  max-width: 200px;
   padding: 20px 0 20px 0;
 }
 
