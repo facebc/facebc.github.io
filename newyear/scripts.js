@@ -267,10 +267,12 @@ var faceBody = document.getElementById('body1').innerHTML.trim()
           cc.unshift(mlaEmail);
       }
 
+			var outlook = document.getElementById('outlook');
+			var emailSep = outlook && outlook.checked ? ';' : ',';
 			var escapedBody = encodeURIComponent(body);
-			var url = 'mailto:' + to.join(',') +
+			var url = 'mailto:' + to.join(emailSep) +
         '?subject=' + subject + '&body=' + escapedBody +
-				'&cc=' + encodeURIComponent(cc.join(','));
+				'&cc=' + encodeURIComponent(cc.join(emailSep));
 
 			var t;
 			button.addEventListener("blur", function (e) {
