@@ -269,8 +269,9 @@ var faceBody = document.getElementById('body1').innerHTML.trim()
 
 			var outlook = document.getElementById('outlook');
 			var emailSep = outlook && outlook.checked ? ';' : ',';
+
 			var escapedBody = encodeURIComponent(body);
-			var url = 'mailto:' + to.join(emailSep) +
+			var url = 'mailto:' + encodeURIComponent(to.join(emailSep)) +
         '?subject=' + subject + '&body=' + escapedBody +
 				'&cc=' + encodeURIComponent(cc.join(emailSep));
 
