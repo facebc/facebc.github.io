@@ -129,7 +129,7 @@ var moeName = 'Premier Horgan, Minister Fleming, and Minister James';
 var oppCritics = [
   'mary.polak.MLA@leg.bc.ca',
   'dan.davies.MLA@leg.bc.ca',
-  'rich.coleman.MLA@leg.bc.ca',
+  'andrew.wilkinson.MLA@leg.bc.ca',
   'andrew.weaver.mla@leg.bc.ca',
 	'Sonia.Furstenau.MLA@leg.bc.ca'
 ];
