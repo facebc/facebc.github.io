@@ -28,6 +28,7 @@
 	}
 })(window, document);
 
+var toolDisabled = true;
 var mlas = [
   ['Daryl Plecas', 'darryl.plecas.MLA@leg.bc.ca', 'Abbotsford South'],
   ['Michael de Jong', 'mike.dejong.mla@leg.bc.ca', 'Abbotsford West'],
@@ -191,7 +192,7 @@ var faceBody = document.getElementById('body1').innerHTML.trim()
 	var nameInput = document.getElementById('name');
 	var enableButton = function () {
 		var disabled = nameInput.value.trim().length === 0 || mla.value.trim().length === 0;
-		if (disabled) {
+		if (disabled || toolDisabled) {
 			button.setAttribute('disabled', disabled);
 			button.removeAttribute('href');
 		} else {
@@ -222,6 +223,9 @@ var faceBody = document.getElementById('body1').innerHTML.trim()
 	});
 
 	button.addEventListener("click", function (e) {
+		if (toolDisabled) {
+			return;
+		}
 		try {
 			if (button.getAttribute('disabled') === 'true') {
 				e.preventDefault();
