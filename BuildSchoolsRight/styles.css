@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  background-color: #6199a3;
+  font-size: medium;
+}
+
+.banner {
+  width: 100vw;
+}
+
+main {
+  max-width: 700px;
+  margin: 2em auto;
+  background-color: #eaf3f2;
+  padding: 1em;
+}
+
+blockquote {
+  background-color: #f8f8f8;
+}
